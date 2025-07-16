@@ -12,11 +12,20 @@ class ExampleTheme extends FtkTheme {
 final FtkThemeData darkTheme = FtkThemeData(
   themeData: ThemeData.dark(),
   ftkPalette: darkPalette,
+  ftkTextTheme: FtkTextTheme.fromBrightnessDefault(
+    Brightness.dark,
+    fontFamily: 'FiraSans',
+  ),
 );
 
+/// Light theme will only be treated as "dark" theme
 final FtkThemeData lightTheme = FtkThemeData(
-  themeData: ThemeData.light(),
-  ftkPalette: lightPalette,
+  themeData: ThemeData.dark(),
+  ftkPalette: darkPalette,
+  ftkTextTheme: FtkTextTheme.fromBrightnessDefault(
+    Brightness.dark,
+    fontFamily: 'FiraSans',
+  ),
 );
 
 class ExamplePalette {

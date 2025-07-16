@@ -11,19 +11,37 @@ class HomeView extends StackedView<HomeViewModel> {
   Widget builder(BuildContext context, HomeViewModel viewModel, Widget? child) {
     return Scaffold(
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(32),
-          children: [
-            Text(
-              "Hello, World",
-              style: context.title,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              "This is the HomeView of the app template. If you want to change this to a different view, edit the 'initialRoute' option in the MaterialApp constructor in app.dart. Have Fun :D",
-              style: context.body.semiBold,
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(32.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                "Lunar Transfer",
+                style: context.title,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 32),
+              Center(
+                child: Image.asset(
+                  "assets/images/moon-logo.png",
+                  width: 200,
+                ),
+              ),
+              const SizedBox(height: 32),
+              Text(
+                "This is a simple demo application that can enable users to transfer files between local network folders and your mobile phone!",
+                style: context.body,
+                textAlign: TextAlign.center,
+              ),
+              const Spacer(),
+              FtkButton(
+                text: "Begin",
+                onPressed: () {},
+              ),
+              const Spacer(),
+            ],
+          ),
         ),
       ),
     );
