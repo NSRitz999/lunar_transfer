@@ -282,7 +282,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "07b76a051c122a88c306666606f1f513f14aeb59"
+      resolved-ref: c85047d7d92be9eb72775c711ea27ca9bb3c245b
       url: "https://github.com/NSRitz999/ftk_ui.git"
     source: git
     version: "0.0.1"
@@ -407,13 +407,13 @@ packages:
     source: hosted
     version: "2.1.1"
   logger:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: logger
-      sha256: "7ad7215c15420a102ec687bb320a7312afd449bac63bfb1c60d9787c27b9767f"
+      sha256: "2621da01aabaf223f8f961e751f2c943dbb374dc3559b982f200ccedadaa6999"
       url: "https://pub.dev"
     source: hosted
-    version: "1.4.0"
+    version: "2.6.0"
   logging:
     dependency: transitive
     description:
@@ -719,10 +719,10 @@ packages:
     dependency: "direct dev"
     description:
       name: stacked_generator
-      sha256: eaa6447e3fd4d4010b746629b5518364d7fa7f6453ffb6416ad449fd352d1181
+      sha256: "0f2daf05a237111881566177952c897441dbd0124a6276d8cd012b253667e8aa"
       url: "https://pub.dev"
     source: hosted
-    version: "1.6.1"
+    version: "1.6.1-pre.1"
   stacked_services:
     dependency: "direct main"
     description:

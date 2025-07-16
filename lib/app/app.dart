@@ -4,13 +4,15 @@ import 'package:ftk_template_app/ui/views/home/home_view.dart';
 import 'package:ftk_template_app/ui/views/startup/startup_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'package:ftk_template_app/ui/views/network_login/network_login_view.dart';
 // @stacked-import
 
 @StackedApp(
   routes: [
     MaterialRoute(page: HomeView, initial: true),
     MaterialRoute(page: StartupView),
-    // @stacked-route
+    MaterialRoute(page: NetworkLoginView),
+// @stacked-route
   ],
   dependencies: [
     LazySingleton(classType: BottomSheetService),
@@ -26,5 +28,6 @@ import 'package:stacked_services/stacked_services.dart';
     StackedDialog(classType: InfoAlertDialog),
     // @stacked-dialog
   ],
+  logger: StackedLogger(),
 )
 class App {}

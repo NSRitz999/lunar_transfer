@@ -37,7 +37,7 @@ class HomeView extends StackedView<HomeViewModel> {
               const Spacer(),
               FtkButton(
                 text: "Begin",
-                onPressed: () {},
+                onPressed: viewModel.onBeginPressed,
               ),
               const Spacer(),
             ],

@@ -28,14 +28,15 @@ final FtkThemeData lightTheme = FtkThemeData(
   ),
 );
 
-class ExamplePalette {
-  const ExamplePalette._();
+class LunarPalette {
+  const LunarPalette._();
 
   static const Color blue = Color(0xFF9FB3DF);
   static const Color lightBlue = Color(0xFF9EC6F3);
   static const Color seaGreen = Color(0xFFBDDDE4);
   static const Color beige = Color(0xFFFFF1D5);
   static const Color darkblue = Color(0xFF35374B);
+  static const Color darkWidget = Color.fromARGB(255, 27, 28, 38);
   static const Color darkBlueGreen = Color(0xFF344953);
   static const Color darkSeaGreen = Color(0xFF50727B);
   static const Color green = Color(0xFF78A083);
@@ -45,19 +46,19 @@ class ExamplePalette {
 }
 
 final FtkThemePalette lightPalette = FtkThemePalette(
-  primary: ExamplePalette.blue,
-  secondary: ExamplePalette.seaGreen,
-  textColor: ExamplePalette.black,
-  buttonColor: ExamplePalette.blue,
-  error: ExamplePalette.red,
-  background: ExamplePalette.beige,
+  primary: LunarPalette.blue,
+  secondary: LunarPalette.seaGreen,
+  textColor: LunarPalette.black,
+  buttonColor: LunarPalette.blue,
+  error: LunarPalette.red,
+  background: LunarPalette.beige,
 );
 
 final FtkThemePalette darkPalette = FtkThemePalette(
-  primary: ExamplePalette.lightBlue,
-  secondary: ExamplePalette.green,
-  textColor: ExamplePalette.white,
-  buttonColor: ExamplePalette.darkSeaGreen,
-  error: ExamplePalette.red,
-  background: ExamplePalette.darkblue,
+  primary: LunarPalette.lightBlue,
+  secondary: LunarPalette.green,
+  textColor: LunarPalette.white,
+  buttonColor: LunarPalette.darkSeaGreen,
+  error: LunarPalette.red,
+  background: LunarPalette.darkblue,
 );
