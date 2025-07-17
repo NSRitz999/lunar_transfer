@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "ftk_template_app" "\0"
+            VALUE "FileDescription", "lunar_transfer" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "ftk_template_app" "\0"
+            VALUE "InternalName", "lunar_transfer" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "ftk_template_app.exe" "\0"
-            VALUE "ProductName", "ftk_template_app" "\0"
+            VALUE "OriginalFilename", "lunar_transfer.exe" "\0"
+            VALUE "ProductName", "lunar_transfer" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

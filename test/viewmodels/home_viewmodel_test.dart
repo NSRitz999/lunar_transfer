@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ftk_template_app/app/app.locator.dart';
-import 'package:ftk_template_app/ui/views/home/home_viewmodel.dart';
+import 'package:lunar_transfer/app/app.locator.dart';
+import 'package:lunar_transfer/ui/views/home/home_viewmodel.dart';
 
 import '../helpers/test_helpers.dart';
 

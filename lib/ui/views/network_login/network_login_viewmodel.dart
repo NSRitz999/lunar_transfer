@@ -1,12 +1,18 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:ftk_template_app/app/app.logger.dart';
+import 'package:lunar_transfer/app/app.locator.dart';
+import 'package:lunar_transfer/app/app.logger.dart';
+import 'package:lunar_transfer/app/app.router.dart';
+import 'package:lunar_transfer/services/smb_service.dart';
 import 'package:smb_connect/smb_connect.dart';
 import 'package:stacked/stacked.dart';
+import 'package:stacked_services/stacked_services.dart';
 
 class NetworkLoginViewModel extends BaseViewModel {
   final _log = getLogger("NetworkLoginViewModel");
+  late final _smbService = locator<SmbService>();
+  late final _nav = locator<NavigationService>();
 
   SmbConnect? _connection;
 
@@ -43,18 +49,18 @@ class NetworkLoginViewModel extends BaseViewModel {
   }
 
   Future<void> onConnect() async {
-    try {
-      _connection = await SmbConnect.connectAuth(
-        host: networkAddr,
-        domain: domainAddr,
-        username: username,
-        password: password,
-      );
+    final result = await _smbService.connectToNetwork(
+      host: networkAddr,
+      domain: domainAddr,
+      username: username,
+      password: password,
+    );
 
-      _log.i("Connection successful!");
-    } catch (e, s) {
-      _log.e("Error: $e", stackTrace: s);
+    if (result.isFailure) {
+      return;
     }
+
+    await _nav.replaceWithNetworkFolderView();
   }
 
   Future<void> closeConnection() async {

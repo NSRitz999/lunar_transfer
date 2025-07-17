@@ -14,4 +14,4 @@ rm -rf .git
 sudo rm -r .git
 ```
 
-This is to remove the `ftk_template_app` repository information and enable you, the developer, to easily add a remote repository for this app. See? Simple Setup XD.
+This is to remove the `lunar_transfer` repository information and enable you, the developer, to easily add a remote repository for this app. See? Simple Setup XD.

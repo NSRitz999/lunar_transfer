@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ftk_template_app/app/app.theme.dart';
+import 'package:lunar_transfer/app/app.theme.dart';
 import 'package:ftk_ui/ftk_ui.dart';
 import 'package:stacked/stacked.dart';
 

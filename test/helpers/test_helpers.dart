@@ -1,7 +1,8 @@
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:ftk_template_app/app/app.locator.dart';
+import 'package:lunar_transfer/app/app.locator.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'package:lunar_transfer/services/smb_service.dart';
 // @stacked-import
 
 import 'test_helpers.mocks.dart';
@@ -12,14 +13,16 @@ import 'test_helpers.mocks.dart';
     MockSpec<NavigationService>(onMissingStub: OnMissingStub.returnDefault),
     MockSpec<BottomSheetService>(onMissingStub: OnMissingStub.returnDefault),
     MockSpec<DialogService>(onMissingStub: OnMissingStub.returnDefault),
-    // @stacked-mock-spec
+    MockSpec<SmbService>(onMissingStub: OnMissingStub.returnDefault),
+// @stacked-mock-spec
   ],
 )
 void registerServices() {
   getAndRegisterNavigationService();
   getAndRegisterBottomSheetService();
   getAndRegisterDialogService();
-  // @stacked-mock-register
+  getAndRegisterSmbService();
+// @stacked-mock-register
 }
 
 MockNavigationService getAndRegisterNavigationService() {
@@ -76,6 +79,12 @@ MockDialogService getAndRegisterDialogService() {
   return service;
 }
 
+MockSmbService getAndRegisterSmbService() {
+  _removeRegistrationIfExists<SmbService>();
+  final service = MockSmbService();
+  locator.registerSingleton<SmbService>(service);
+  return service;
+}
 // @stacked-mock-create
 
 void _removeRegistrationIfExists<T extends Object>() {

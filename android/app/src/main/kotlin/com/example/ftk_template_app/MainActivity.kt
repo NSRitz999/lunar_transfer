@@ -1,4 +1,4 @@
-package com.example.ftk_template_app
+package com.example.lunar_transfer
 
 import io.flutter.embedding.android.FlutterActivity
 

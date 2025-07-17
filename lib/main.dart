@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ftk_template_app/app/app.bottomsheets.dart';
-import 'package:ftk_template_app/app/app.dialogs.dart';
-import 'package:ftk_template_app/app/app.locator.dart';
-import 'package:ftk_template_app/app/app.router.dart';
-import 'package:ftk_template_app/app/app.theme.dart';
+import 'package:lunar_transfer/app/app.bottomsheets.dart';
+import 'package:lunar_transfer/app/app.dialogs.dart';
+import 'package:lunar_transfer/app/app.locator.dart';
+import 'package:lunar_transfer/app/app.router.dart';
+import 'package:lunar_transfer/app/app.theme.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 
