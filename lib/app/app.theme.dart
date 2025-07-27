@@ -14,7 +14,7 @@ final FtkThemeData darkTheme = FtkThemeData(
   ftkPalette: darkPalette,
   ftkTextTheme: FtkTextTheme.fromBrightnessDefault(
     Brightness.dark,
-    fontFamily: 'FiraSans',
+    fontFamily: 'Roboto',
   ),
 );
 
@@ -23,8 +23,8 @@ final FtkThemeData lightTheme = FtkThemeData(
   themeData: ThemeData.dark(),
   ftkPalette: darkPalette,
   ftkTextTheme: FtkTextTheme.fromBrightnessDefault(
-    Brightness.dark,
-    fontFamily: 'FiraSans',
+    Brightness.light,
+    fontFamily: 'Roboto',
   ),
 );
 
