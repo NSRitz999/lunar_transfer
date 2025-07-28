@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:lunar_transfer/app/app.logger.dart';
-import 'package:lunar_transfer/app/common/result.dart';
+import 'package:lunar_transfer/common/result.dart';
 import 'package:smb_connect/smb_connect.dart';
 
 class SmbService {

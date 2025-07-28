@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:ftk_ui/ftk_ui.dart';
 
-class ExampleTheme extends FtkTheme {
-  ExampleTheme()
+class LunarTheme extends FtkTheme {
+  LunarTheme()
       : super(
           dark: darkTheme,
           light: lightTheme,
         );
+
+  static List<BoxShadow> get shadows => [
+        const BoxShadow(
+          offset: Offset(2, 4),
+        ),
+      ];
+
+  static BorderRadiusGeometry get defaultBorderRadius =>
+      BorderRadiusGeometry.circular(32);
+
+  static EdgeInsets get padding => const EdgeInsets.all(32);
 }
 
 final FtkThemeData darkTheme = FtkThemeData(
@@ -43,6 +54,8 @@ class LunarPalette {
   static const Color black = Colors.black;
   static const Color white = Colors.white;
   static const Color red = Colors.redAccent;
+
+  static const Color eggWhite = Color(0xFFF1EBDD);
 }
 
 final FtkThemePalette lightPalette = FtkThemePalette(

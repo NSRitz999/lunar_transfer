@@ -34,7 +34,7 @@ flutter:
   fonts:
     - family: Roboto
       fonts:
-        - asset: assets/fonts/Roboto-Variable
+        - asset: assets/fonts/Roboto-Variable.ttf
     - family: FiraSans
       fonts:
         - asset: assets/fonts/FiraSans-Regular.ttf

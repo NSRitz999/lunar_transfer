@@ -19,7 +19,7 @@ Future<void> main() async {
   runApp(const MainApp());
 }
 
-final appTheme = ExampleTheme();
+final appTheme = LunarTheme();
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

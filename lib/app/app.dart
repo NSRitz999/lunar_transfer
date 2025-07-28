@@ -7,6 +7,7 @@ import 'package:stacked_services/stacked_services.dart';
 import 'package:lunar_transfer/ui/views/network_login/network_login_view.dart';
 import 'package:lunar_transfer/ui/views/network_folder/network_folder_view.dart';
 import 'package:lunar_transfer/services/smb_service.dart';
+import 'package:lunar_transfer/ui/dialogs/loading/loading_dialog.dart';
 // @stacked-import
 
 @StackedApp(
@@ -30,7 +31,8 @@ import 'package:lunar_transfer/services/smb_service.dart';
   ],
   dialogs: [
     StackedDialog(classType: InfoAlertDialog),
-    // @stacked-dialog
+    StackedDialog(classType: LoadingDialog),
+// @stacked-dialog
   ],
   logger: StackedLogger(),
 )
