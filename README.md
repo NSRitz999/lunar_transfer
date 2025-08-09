@@ -1,17 +1,7 @@
-# Flutter Toolkit - Template App
+# Lunar Transfer
 
-This is a simple base repository for including all of the APIs I personally developed for Flutter (aka, all of the ones prefaced by 'Flutter Toolkit' or 'fkt\_...'). This app is meant to help speed up the develpoment process by having a base custom configuration that I can use for all future apps.
+This app seeks to solve a simple problem: data transfer from mobile devices (primarily from iOS) to computers. Similar to how airdrop can share files between all apple products, this app is designed to create a simple approach for sharing files across non-apple devices through the SMB protocol (network file sharing).
 
-# Usage
+## Technical Details
 
-To get started, remember to run the following command before anything else:
-
-```
-rm -rf .git
-
-# or (depending on OS)
-
-sudo rm -r .git
-```
-
-This is to remove the `lunar_transfer` repository information and enable you, the developer, to easily add a remote repository for this app. See? Simple Setup XD.
+This app was developed using the Flutter Stacked production architecture framework, which enables easy adherence to the Model-View-ViewModel (MVVM) architecture. Additionally, this app uses my own APIs for fast development of new apps in Flutter. Since these APIs are private, you will not be able to run these apps on personal machines.
